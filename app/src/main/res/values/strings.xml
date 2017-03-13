@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PerfectFlatmate</string>
+
+    <string name="title_activity_navigation_main">NavigationMain</string>
+    <string name="hello_blank_fragment">Hello World!</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!--i am-->
+    <string name="i_am_type">타입</string>
+    <string name="i_am_type_student">학생</string>
+    <string name="i_am_type_common_ppl">일반인</string>
+    <string name="i_am_sex">성별</string>
+    <string name="i_am_sex_male">남자</string>
+    <string name="i_am_sex_female">여자</string>
+    <string name="i_am_age">나이</string>
+
+    <string name="profile_intro">내 소개</string>
+
+    <string name="next">Next</string>
+
+    <string name="intro_text_hint">소개말을 적어주세요.</string>
+
+</resources>

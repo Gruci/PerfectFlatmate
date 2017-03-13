@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ImageView
+        android:id="@+id/profile_card_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_background"
+        android:layout_below="@id/app_bar"
+        android:background="@color/profileDefaultBackground"
+        android:elevation="@dimen/elevation_padding"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/profile_circle_image_layout_size"
+        android:layout_height="@dimen/profile_circle_image_layout_size"
+        android:layout_below="@+id/app_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/shape_circle_white"
+        android:elevation="@dimen/elevation_padding"
+        android:scaleType="center"
+        android:src="@drawable/menu_profile" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/common_margin"
+        android:text="Hello"
+        android:textSize="@dimen/profile_name_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profile_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_name"
+        android:text="안녕하세요"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/profile_edit_button"
+        android:layout_width="@dimen/profile_circle_button"
+        android:layout_height="@dimen/profile_circle_button"
+        android:layout_below="@+id/profile_intro"
+        android:layout_marginLeft="@dimen/profile_circle_button_margin"
+        android:layout_marginTop="@dimen/profile_button_top_margin"
+        android:background="@drawable/shape_circle_grey"
+        android:src="@drawable/btn_edit_gray" />
+
+    <ImageButton
+        android:id="@+id/answer_edit_button"
+        android:layout_width="@dimen/profile_circle_button"
+        android:layout_height="@dimen/profile_circle_button"
+        android:layout_alignTop="@+id/profile_edit_button"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_circle_grey"
+        android:src="@drawable/btn_msg_gray" />
+
+    <ImageButton
+        android:id="@+id/map_edit_button"
+        android:layout_width="@dimen/profile_circle_button"
+        android:layout_height="@dimen/profile_circle_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/answer_edit_button"
+        android:layout_marginEnd="@dimen/profile_circle_button_margin"
+        android:background="@drawable/shape_circle_grey"
+        android:src="@drawable/btn_pin_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/profile_edit_button"
+        android:layout_below="@+id/profile_edit_button"
+        android:layout_marginTop="@dimen/button_text_top_margin"
+        android:layout_marginRight="2dp"
+        android:text="프로필수정"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer_edit_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/button_text_top_margin"
+        android:text="답변수정"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/map_edit_button"
+        android:layout_alignEnd="@+id/map_edit_button"
+        android:layout_marginTop="@dimen/button_text_top_margin"
+        android:layout_marginRight="9dp"
+        android:text="지역수정"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

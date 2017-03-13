@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:id="@+id/search_age"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_iam_height"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginLeft="@dimen/context_width_margin"
+        android:layout_marginRight="@dimen/context_width_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/shape_rounded_rectangle"
+        android:elevation="@dimen/elevation_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/context_width_margin"
+            android:layout_marginTop="@dimen/context_text_top_margin"
+            android:text="@string/i_am_age"
+            android:textColor="@color/textColorDetail"
+            android:textSize="@dimen/context_text_size" />
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/context_text_top_margin" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/search_ppl_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/search_age"
+        android:layout_marginLeft="@dimen/context_width_margin"
+        android:layout_marginRight="@dimen/context_width_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/shape_spinner_rectangle"
+        android:elevation="@dimen/elevation_padding"
+        android:spinnerMode="dropdown">
+
+    </Spinner>
+
+    <RelativeLayout
+        android:id="@+id/msg_notice"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/search_ppl_spinner"
+        android:layout_marginLeft="@dimen/context_width_margin"
+        android:layout_marginRight="@dimen/context_width_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/shape_rounded_rectangle"
+        android:elevation="@dimen/elevation_padding"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/notice_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/context_width_margin"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_notification" />
+
+        <TextView
+            android:id="@+id/notice_text"
+            android:layout_toRightOf="@+id/notice_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/context_width_margin"
+            android:layout_marginTop="16dp"
+            android:text="수신표시"
+            android:textColor="@color/textColorDetail"
+            android:textSize="@dimen/context_text_size" />
+
+        <!-- Switch thumb/ track 작업해야함 -->
+
+        <Switch
+            android:id="@+id/notice_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/notice_text"
+            android:layout_marginEnd="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_active"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/msg_notice"
+        android:layout_marginLeft="@dimen/context_width_margin"
+        android:layout_marginRight="@dimen/context_width_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/shape_rounded_rectangle"
+        android:elevation="@dimen/elevation_padding"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/active_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/context_width_margin"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_id_active" />
+
+        <TextView
+            android:id="@+id/active_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/context_width_margin"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/active_ic"
+            android:text="계정 활성화"
+            android:textColor="@color/textColorDetail"
+            android:textSize="@dimen/context_text_size" />
+
+        <Switch
+            android:id="@+id/active_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/active_text"
+            android:layout_marginEnd="20dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

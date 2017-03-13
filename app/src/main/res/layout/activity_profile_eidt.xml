@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <RelativeLayout
+        android:id="@+id/profile_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_card_layout_height"
+        android:layout_below="@id/app_bar"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/elevation_padding">
+
+        <ImageView
+            android:id="@+id/profile_card_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_card_image_height"
+            android:background="@color/profileDefaultBackground"
+            android:scaleType="center" />
+
+        <ImageButton
+            android:id="@+id/profile_card_background_button"
+            android:layout_width="@dimen/profile_image_buttons_size"
+            android:layout_height="@dimen/profile_image_buttons_size"
+            android:background="@drawable/shape_circle_gradient"
+            android:src="@drawable/btn_camera_white"
+            android:layout_alignTop="@+id/profile_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/profile_card_button_padding"
+            android:layout_marginTop="@dimen/profile_card_button_padding" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/profile_circle_image_layout_size"
+            android:layout_height="@dimen/profile_circle_image_layout_size"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/profile_image_margin_bottom"
+            android:background="@drawable/shape_circle_white"
+            android:scaleType="center"
+            android:src="@drawable/menu_profile" />
+
+        <ImageButton
+            android:id="@+id/profile_image_button"
+            android:layout_width="@dimen/profile_image_buttons_size"
+            android:layout_height="@dimen/profile_image_buttons_size"
+            android:background="@drawable/shape_circle_gradient"
+            android:src="@drawable/btn_camera_white"
+            android:layout_below="@+id/profile_card_background"
+            android:layout_alignEnd="@+id/profile_image" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textSize="@dimen/profile_name_text_size"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/profile_name_margin_bottom"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/introduce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_iam_height"
+        android:layout_below="@+id/profile_card"
+        android:layout_marginLeft="@dimen/context_width_margin"
+        android:layout_marginRight="@dimen/context_width_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/shape_rounded_rectangle"
+        android:elevation="@dimen/elevation_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/context_width_margin"
+            android:layout_marginTop="@dimen/context_text_top_margin"
+            android:text="@string/profile_intro"
+            android:textColor="@color/textColorDetail"
+            android:textSize="@dimen/context_text_size" />
+
+        <EditText
+            android:id="@+id/profile_intro"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_edit_text_height"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginLeft="@dimen/context_width_margin"
+            android:layout_marginRight="@dimen/context_width_margin"
+            android:background="@drawable/shape_profile_intro"
+            android:textSize="@dimen/profile_edit_text_size"
+            android:paddingLeft="@dimen/common_margin"
+            android:hint="@string/intro_text_hint"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_iam_height"
+        android:layout_below="@+id/introduce"
+        android:layout_marginLeft="@dimen/context_width_margin"
+        android:layout_marginRight="@dimen/context_width_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/shape_rounded_rectangle"
+        android:elevation="@dimen/elevation_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/context_width_margin"
+            android:layout_marginTop="@dimen/context_text_top_margin"
+            android:text="@string/i_am_type"
+            android:textColor="@color/textColorDetail"
+            android:textSize="@dimen/context_text_size" />
+
+        <RadioGroup
+            android:id="@+id/profile_type_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/context_text_top_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/radio_margin"
+                android:button="@drawable/custom_btn_radio"
+                android:text="@string/i_am_type_student" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_btn_radio"
+                android:text="@string/i_am_type_common_ppl" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_iam_height"
+        android:layout_below="@+id/type"
+        android:layout_marginLeft="@dimen/context_width_margin"
+        android:layout_marginRight="@dimen/context_width_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/shape_rounded_rectangle"
+        android:elevation="@dimen/elevation_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/context_width_margin"
+            android:layout_marginTop="@dimen/context_text_top_margin"
+            android:text="@string/i_am_age"
+            android:textColor="@color/textColorDetail"
+            android:textSize="@dimen/context_text_size" />
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/context_text_top_margin" />
+
+    </LinearLayout>
+
+</RelativeLayout>

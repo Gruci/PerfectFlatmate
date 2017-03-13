@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_iam_height"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginLeft="@dimen/context_width_margin"
+        android:layout_marginRight="@dimen/context_width_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/shape_rounded_rectangle"
+        android:elevation="@dimen/elevation_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/context_width_margin"
+            android:layout_marginTop="@dimen/context_text_top_margin"
+            android:text="@string/i_am_type"
+            android:textColor="@color/textColorDetail"
+            android:textSize="@dimen/context_text_size" />
+
+        <RadioGroup
+            android:id="@+id/profile_type_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/context_text_top_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/type_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/radio_margin"
+                android:button="@drawable/custom_btn_radio"
+                android:text="@string/i_am_type_student" />
+
+            <RadioButton
+                android:id="@+id/type_common_ppl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_btn_radio"
+                android:text="@string/i_am_type_common_ppl" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_iam_height"
+        android:layout_marginLeft="@dimen/context_width_margin"
+        android:layout_marginRight="@dimen/context_width_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/shape_rounded_rectangle"
+        android:elevation="@dimen/elevation_padding"
+        android:orientation="vertical"
+        android:layout_below="@+id/type">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/context_width_margin"
+            android:layout_marginTop="@dimen/context_text_top_margin"
+            android:text="@string/i_am_sex"
+            android:textColor="@color/textColorDetail"
+            android:textSize="@dimen/context_text_size" />
+
+        <RadioGroup
+            android:id="@+id/profile_sex_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/context_text_top_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/sex_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/radio_margin"
+                android:button="@drawable/custom_btn_radio"
+                android:text="@string/i_am_sex_male" />
+
+            <RadioButton
+                android:id="@+id/sex_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_btn_radio"
+                android:text="@string/i_am_sex_female" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_iam_height"
+        android:layout_below="@+id/sex"
+        android:layout_marginLeft="@dimen/context_width_margin"
+        android:layout_marginRight="@dimen/context_width_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/shape_rounded_rectangle"
+        android:elevation="@dimen/elevation_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/context_width_margin"
+            android:layout_marginTop="@dimen/context_text_top_margin"
+            android:text="@string/i_am_age"
+            android:textColor="@color/textColorDetail"
+            android:textSize="@dimen/context_text_size" />
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/context_text_top_margin" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nex_btn_height"
+        android:background="@drawable/shape_gradient_color"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+
+</RelativeLayout>

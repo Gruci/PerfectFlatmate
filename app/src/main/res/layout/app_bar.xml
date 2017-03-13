@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:paddingTop="@dimen/app_bar_top_padding"
+    android:elevation="@dimen/elevation_padding"
+    app:theme="@style/CustomToolBarTheme">
+    <!--elevation is effected over api21-->
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity"
+            android:textStyle="bold"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/toolbar_text_size" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
