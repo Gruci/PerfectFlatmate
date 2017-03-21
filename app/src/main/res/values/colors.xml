@@ -12,4 +12,9 @@
 
     <color name="circleGrey">#fbfbfb</color>
 
+    <color name="progressDefault">#ededed</color>
+
+    <color name="gradientStart">#fc5bc4</color>
+    <color name="gradientEnd">#a644ff</color>
+
 </resources>

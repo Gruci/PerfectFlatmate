@@ -10,14 +10,21 @@
         android:theme="@style/AppTheme"
         android:name=".CustomFonts">
         <activity android:name=".activity.MainActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".activity.IAmActivity"></activity>
+        <activity android:name=".activity.SettingActivity"></activity>
+        <activity android:name=".activity.MateDetailActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.IAmActivity"></activity>
-        <activity android:name=".activity.SettingActivity"></activity>
     </application>
 
 </manifest>

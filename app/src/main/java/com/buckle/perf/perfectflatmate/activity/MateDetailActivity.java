@@ -1,27 +1,27 @@
 package com.buckle.perf.perfectflatmate.activity;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
 import com.buckle.perf.perfectflatmate.BaseActivity;
 import com.buckle.perf.perfectflatmate.R;
-import com.tsengvn.typekit.TypekitContextWrapper;
 
+/**
+ * Created by JJ on 2017-03-22.
+ */
 
-public class IAmActivity extends BaseActivity{
+public class MateDetailActivity extends BaseActivity {
 
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_i_am);
+        setContentView(R.layout.activity_mate_detail);
 
         toolbar = (Toolbar)findViewById(R.id.app_bar);
-        ((TextView) findViewById(R.id.toolbar_title)).setText("I am ...");
+        ((TextView) findViewById(R.id.toolbar_title)).setText("Finding Mates");
 
         setSupportActionBar(toolbar);
     }
