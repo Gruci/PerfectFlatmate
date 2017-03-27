@@ -17,4 +17,6 @@
     <color name="gradientStart">#fc5bc4</color>
     <color name="gradientEnd">#a644ff</color>
 
+    <color name="textAlert">#d7103c</color>
+
 </resources>

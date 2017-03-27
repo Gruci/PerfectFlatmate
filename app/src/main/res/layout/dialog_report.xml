@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="290dp"
+    android:background="@drawable/shape_rounded_rectangle"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/report_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="19dp"
+        android:text="신고항목을 선택해 주세요."
+        android:textColor="@color/textColorDetail"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/report_radio_btn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/report_scam_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_btn_radio"
+            android:layoutDirection="rtl"
+            android:text="사기꾼"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/report_abuse_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@drawable/custom_btn_radio"
+            android:layoutDirection="rtl"
+            android:text="부적절한 내용"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/report_unused_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@drawable/custom_btn_radio"
+            android:layoutDirection="rtl"
+            android:text="더이상 사용하지 않는 계정"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/report_other_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@drawable/custom_btn_radio"
+            android:layoutDirection="rtl"
+            android:text="기타이유"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/report_other_detail"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/report_radio_btn"
+        android:layout_below="@+id/report_radio_btn"
+        android:backgroundTint="@color/textColorPrimary"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp"
+        android:hint="상세 내용을 적어주세요"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/report_text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="신고하기"
+        android:textColor="@color/textAlert"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/report_other_detail" />
+
+    <TextView
+        android:id="@+id/report_cancel_text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/report_text_btn"
+        android:layout_alignBottom="@+id/report_text_btn"
+        android:layout_toStartOf="@+id/report_text_btn"
+        android:layout_marginEnd="30dp" />
+
+</RelativeLayout>
