@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/colorPrimary"
     android:orientation="vertical">
 
@@ -37,7 +38,7 @@
         android:layout_below="@id/profile_image"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/common_margin"
-        android:text="Hello"
+        tools:text="Hello"
         android:textSize="@dimen/profile_name_text_size"
         android:textStyle="bold" />
 
@@ -46,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/profile_name"
-        android:text="안녕하세요"
+        tools:text="안녕하세요"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="14sp" />

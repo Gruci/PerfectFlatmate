@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@+id/navigation_image_container"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_image_container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimary"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:background="@color/colorPrimary">
 
     <ImageView
         android:id="@+id/navigation_profile_background"
@@ -14,14 +15,14 @@
     <!--차후 이미지를 갖고올때 Gilde-transformation을 통한 원형 이미지 crop 필요-->
     <ImageView
         android:id="@+id/navigation_profile_picture"
-        android:layout_alignBottom="@id/navigation_profile_background"
-        android:layout_marginLeft="@dimen/context_width_margin"
-        android:layout_marginBottom="@dimen/navigation_profile_bottom_margin"
         android:layout_width="64dp"
         android:layout_height="64dp"
+        android:layout_alignBottom="@id/navigation_profile_background"
+        android:layout_marginBottom="@dimen/navigation_profile_bottom_margin"
+        android:layout_marginLeft="@dimen/context_width_margin"
         android:background="@drawable/shape_circle_white"
-        android:src="@drawable/menu_profile"
-        android:scaleType="center"/>
+        android:scaleType="center"
+        android:src="@drawable/menu_profile" />
 
     <TextView
         android:id="@+id/navigation_profile_name"
@@ -33,5 +34,5 @@
         android:textColor="@color/colorPrimary"
         android:textSize="16dp"
         android:textStyle="bold"
-        android:text="하이"/>
+        tools:text="하이" />
 </RelativeLayout>

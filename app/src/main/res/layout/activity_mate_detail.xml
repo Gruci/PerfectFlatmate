@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
@@ -49,9 +50,9 @@
         android:layout_alignStart="@+id/matching_percent"
         android:layout_marginBottom="19dp"
         android:layout_marginLeft="17dp"
-        android:text="40"
         android:textColor="@color/textColorPrimary"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        tools:text="40" />
 
     <!--to make % size smaller-->
     <TextView
@@ -75,9 +76,9 @@
         android:layout_toEndOf="@+id/progress_background"
         android:background="@drawable/shape_gradient_color_alpha"
         android:gravity="center"
-        android:text="회원님이 입력하신 답변과 x% 일치합니다"
         android:textColor="@color/colorPrimary"
-        android:textSize="10sp" />
+        android:textSize="10sp"
+        tools:text="회원님이 입력하신 답변과 x% 일치합니다" />
 
 
     <TextView
@@ -98,30 +99,32 @@
         android:layout_below="@+id/profile_image"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Hello"
         android:textColor="@color/textColorDetail"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:text="Hello" />
 
     <TextView
+        android:id="@+id/profile_intro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/profile_name"
         android:gravity="center"
-        android:text="안녕하세요"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        tools:text="안녕하세요" />
 
     <!--TODO:Have to import profile status(answers) with recycler view-->
 
     <ImageButton
+        android:id="@+id/chatting_btn"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@drawable/floating_chat"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/floating_chat" />
 
 
 </RelativeLayout>
