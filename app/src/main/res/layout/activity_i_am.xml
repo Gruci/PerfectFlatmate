@@ -131,6 +131,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/next_btn"
         android:layout_width="match_parent"
         android:layout_height="@dimen/nex_btn_height"
         android:background="@drawable/shape_gradient_color"
