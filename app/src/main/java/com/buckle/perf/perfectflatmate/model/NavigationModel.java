@@ -3,23 +3,23 @@ package com.buckle.perf.perfectflatmate.model;
 
 public class NavigationModel {
 
-    private int nav_icon;
-    private String nav_setting;
+    private int navIcon;
+    private String navSetting;
 
-    public int getNav_icon() {
-        return nav_icon;
+    public int getNavIcon() {
+        return navIcon;
     }
 
-    public void setNav_icon(int nav_icon) {
-        this.nav_icon = nav_icon;
+    public void setNavIcon(int nav_icon) {
+        this.navIcon = nav_icon;
     }
 
-    public String getNav_setting() {
-        return nav_setting;
+    public String getNavSetting() {
+        return navSetting;
     }
 
-    public void setNav_setting(String nav_setting) {
-        this.nav_setting = nav_setting;
+    public void setNavSetting(String nav_setting) {
+        this.navSetting = nav_setting;
     }
 }
 

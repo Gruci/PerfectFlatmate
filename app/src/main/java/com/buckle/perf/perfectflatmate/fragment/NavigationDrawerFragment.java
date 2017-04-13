@@ -86,8 +86,8 @@ public class NavigationDrawerFragment extends Fragment {
         String[] settings = {"Profile", "Message", "Setting"};
         for (int i = 0; i < settings.length && i < icons.length; i++) {
             NavigationModel current = new NavigationModel();
-            current.setNav_icon(icons[i]);
-            current.setNav_setting(settings[i]);
+            current.setNavIcon(icons[i]);
+            current.setNavSetting(settings[i]);
             data.add(current);
         }
         return data;

@@ -38,8 +38,8 @@ public class NavigationAdapter extends RecyclerView.Adapter<NavigationAdapter.Na
     @Override
     public void onBindViewHolder(NavViewHolder holder, int position) {
         NavigationModel current = data.get(position);
-        holder.setting.setText(current.getNav_setting());
-        holder.icon.setImageResource(current.getNav_icon());
+        holder.navSetting.setText(current.getNavSetting());
+        holder.navIcon.setImageResource(current.getNavIcon());
 
     }
 
@@ -49,14 +49,14 @@ public class NavigationAdapter extends RecyclerView.Adapter<NavigationAdapter.Na
     }
 
     class NavViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
-        TextView setting;
-        ImageView icon;
+        TextView navSetting;
+        ImageView navIcon;
 
         public NavViewHolder(View itemView) {
             super(itemView);
-            setting = (TextView) itemView.findViewById(R.id.setting_text);
-            setting.setTypeface(setting.getTypeface(), Typeface.BOLD);
-            icon = (ImageView) itemView.findViewById(R.id.setting_icon);
+            navSetting = (TextView) itemView.findViewById(R.id.setting_text);
+            navSetting.setTypeface(navSetting.getTypeface(), Typeface.BOLD);
+            navIcon = (ImageView) itemView.findViewById(R.id.setting_icon);
 
         }
 

@@ -49,7 +49,7 @@
         android:background="@drawable/shape_circle_white" />
 
     <com.liulishuo.magicprogresswidget.MagicProgressCircle
-        android:id="@+id/matching_percent"
+        android:id="@+id/matching_percent_circle"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_alignBottom="@+id/progress_background"
@@ -66,8 +66,8 @@
         android:id="@+id/matching_percent_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/matching_percent"
-        android:layout_alignStart="@+id/matching_percent"
+        android:layout_alignBottom="@+id/matching_percent_circle"
+        android:layout_alignStart="@+id/matching_percent_circle"
         android:layout_marginBottom="19dp"
         android:layout_marginLeft="17dp"
         android:textColor="@color/textColorPrimary"
