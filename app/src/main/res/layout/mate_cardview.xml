@@ -27,7 +27,7 @@
         android:textColor="@color/textColorDetail"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:text="Hello" />
+        tools:text="이름" />
 
     <TextView
         android:id="@+id/profile_intro"

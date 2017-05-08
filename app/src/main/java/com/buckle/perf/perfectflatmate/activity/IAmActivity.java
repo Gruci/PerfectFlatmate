@@ -15,12 +15,10 @@ import com.tsengvn.typekit.TypekitContextWrapper;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 
 public class IAmActivity extends BaseActivity{
-
-    @BindView(R.id.next_btn)
-    Button mNextBtn;
 
     private Toolbar toolbar;
 
@@ -35,13 +33,12 @@ public class IAmActivity extends BaseActivity{
 
         setSupportActionBar(toolbar);
 
-        mNextBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(IAmActivity.this,MainActivity.class);
-                startActivity(intent);
-            }
-        });
+    }
+
+    @OnClick(R.id.next_btn)
+    public void nextBtnClick(View v) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
 }

@@ -8,20 +8,20 @@ import com.buckle.perf.perfectflatmate.BaseActivity;
 import com.buckle.perf.perfectflatmate.R;
 
 /**
- * Created by Joan on 2017-04-03.
+ * Created by Joan on 2017-05-08.
  */
 
-public class ProfileEditActivity extends BaseActivity {
+public class MessageActivity extends BaseActivity {
 
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_eidt);
+        setContentView(R.layout.activity_message);
 
         toolbar = (Toolbar)findViewById(R.id.app_bar);
-        ((TextView) findViewById(R.id.toolbar_title)).setText("Profile Edit");
+        ((TextView) findViewById(R.id.toolbar_title)).setText("Message");
 
         setSupportActionBar(toolbar);
     }

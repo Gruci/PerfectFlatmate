@@ -1,6 +1,7 @@
 package com.buckle.perf.perfectflatmate.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.buckle.perf.perfectflatmate.R;
+import com.buckle.perf.perfectflatmate.activity.MessageActivity;
+import com.buckle.perf.perfectflatmate.activity.ProfileActivity;
+import com.buckle.perf.perfectflatmate.activity.SettingActivity;
 import com.buckle.perf.perfectflatmate.model.NavigationModel;
 
 import java.util.Collections;
@@ -48,7 +52,7 @@ public class NavigationAdapter extends RecyclerView.Adapter<NavigationAdapter.Na
         return data.size();
     }
 
-    class NavViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    class NavViewHolder extends RecyclerView.ViewHolder{
         TextView navSetting;
         ImageView navIcon;
 
@@ -58,11 +62,29 @@ public class NavigationAdapter extends RecyclerView.Adapter<NavigationAdapter.Na
             navSetting.setTypeface(navSetting.getTypeface(), Typeface.BOLD);
             navIcon = (ImageView) itemView.findViewById(R.id.setting_icon);
 
-        }
+            itemView.setOnClickListener(new View.OnClickListener() {
 
-        @Override
-        public void onClick(View v) {
+                @Override
+                public void onClick(View view) {
+                    Intent intent;
+                    int position = getAdapterPosition();
 
+                    switch (position){
+                        case 0:
+                            intent = new Intent(view.getContext(), ProfileActivity.class);
+                            view.getContext().startActivity(intent);
+                            break;
+                        case 1:
+                            intent = new Intent(view.getContext(), MessageActivity.class);
+                            view.getContext().startActivity(intent);
+                            break;
+                        case 2:
+                            intent = new Intent(view.getContext(), SettingActivity.class);
+                            view.getContext().startActivity(intent);
+                            break;
+                    }
+                }
+            });
         }
     }
 }

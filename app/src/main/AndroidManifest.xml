@@ -19,6 +19,7 @@
         <activity android:name=".activity.MainActivity"></activity>
         <activity android:name=".activity.SettingActivity"></activity>
         <activity android:name=".activity.MateDetailActivity"></activity>
+        <activity android:name=".activity.MessageActivity"></activity>
         <activity android:name=".activity.ProfileActivity"></activity>
         <activity android:name=".activity.ProfileEditActivity"></activity>
     </application>
